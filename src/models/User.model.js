@@ -21,7 +21,7 @@ const userSchema = Schema({
         allowNull: false,
         required: true  
     }
-})
+}, { timestamps: true })
 
 // första argumentet - vad den ska heta i databasen
 const UserModel = mongoose.model('user', userSchema);
